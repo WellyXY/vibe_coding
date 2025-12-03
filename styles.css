@@ -557,11 +557,11 @@ img {
 /* Input Icon Button (Left of Agent) */
 .input-icon-btn {
     position: absolute;
-    bottom: 5px;
+    bottom: 8px;
     right: 90px;
     /* Left of agent avatar */
-    width: 48px;
-    height: 48px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border: none;

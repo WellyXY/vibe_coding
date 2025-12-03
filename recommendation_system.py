@@ -42,35 +42,46 @@ class UserRecommendationSystem:
 
         Args:
             criteria: 推薦條件，例如 {"location": "台北", "hobby": "攝影"}
+                     或 {"description": "looking for someone who..."}
             top_k: 返回前 k 個推薦結果
             use_ai_ranking: 是否使用 AI 進行智能排序
 
         Returns:
             推薦的用戶列表
         """
-        # 1. 基礎過濾：找出符合基本條件的用戶
-        filtered_users = self._filter_users(criteria)
+        # Check if this is a description-only search (free-form text)
+        has_description = 'description' in criteria and criteria['description']
+        other_criteria = {k: v for k, v in criteria.items() if k != 'description' and v}
 
-        print(f"📊 基礎過濾後找到 {len(filtered_users)} 個匹配用戶")
+        # If only description is provided, let AI handle all users
+        if has_description and not other_criteria:
+            print(f"🎯 使用描述搜索: {criteria['description'][:50]}...")
+            filtered_users = self.users  # Use all users for AI ranking
+            print(f"📊 將從 {len(filtered_users)} 個用戶中使用 AI 篩選")
+        else:
+            # 1. 基礎過濾：找出符合基本條件的用戶
+            filtered_users = self._filter_users(criteria)
 
-        if len(filtered_users) == 0:
-            print("⚠️  沒有找到完全匹配的用戶，嘗試放寬條件...")
-            filtered_users = self._filter_users(criteria, strict=False)
-            print(f"📊 放寬條件後找到 {len(filtered_users)} 個用戶")
+            print(f"📊 基礎過濾後找到 {len(filtered_users)} 個匹配用戶")
 
-        # 確保至少有 top_k 個用戶
-        if len(filtered_users) < top_k:
-            print(f"⚠️  用戶數量不足 {top_k} 個，從所有用戶中隨機補充...")
-            # 獲取所有用戶 ID
-            filtered_ids = set(user['id'] for user in filtered_users)
-            # 從剩餘用戶中隨機選擇
-            remaining_users = [u for u in self.users if u['id'] not in filtered_ids]
-            import random
-            random.shuffle(remaining_users)
-            # 補充到 top_k 個
-            needed = top_k - len(filtered_users)
-            filtered_users.extend(remaining_users[:needed])
-            print(f"📊 補充後共有 {len(filtered_users)} 個用戶")
+            if len(filtered_users) == 0:
+                print("⚠️  沒有找到完全匹配的用戶，嘗試放寬條件...")
+                filtered_users = self._filter_users(criteria, strict=False)
+                print(f"📊 放寬條件後找到 {len(filtered_users)} 個用戶")
+
+            # 確保至少有 top_k 個用戶
+            if len(filtered_users) < top_k:
+                print(f"⚠️  用戶數量不足 {top_k} 個，從所有用戶中隨機補充...")
+                # 獲取所有用戶 ID
+                filtered_ids = set(user['id'] for user in filtered_users)
+                # 從剩餘用戶中隨機選擇
+                remaining_users = [u for u in self.users if u['id'] not in filtered_ids]
+                import random
+                random.shuffle(remaining_users)
+                # 補充到 top_k 個
+                needed = top_k - len(filtered_users)
+                filtered_users.extend(remaining_users[:needed])
+                print(f"📊 補充後共有 {len(filtered_users)} 個用戶")
 
         # 2. 使用 Gemini 進行智能排序
         if use_ai_ranking and len(filtered_users) > 0:
@@ -198,9 +209,14 @@ class UserRecommendationSystem:
 
         # 構建條件字符串
         criteria_parts = []
+        user_description = None
+
         for key, value in criteria.items():
             if value is not None and value != "":
-                if key == "location":
+                if key == "description":
+                    # Handle free-form description separately
+                    user_description = value
+                elif key == "location":
                     criteria_parts.append(f"地區在 {value}")
                 elif key == "hobby":
                     hobbies = [value] if isinstance(value, str) else value
@@ -214,7 +230,13 @@ class UserRecommendationSystem:
                 elif key == "gender":
                     criteria_parts.append(f"性別是 {value}")
 
-        criteria_text = "、".join(criteria_parts) if criteria_parts else "無特定條件"
+        # If user provided a description, use it as the main criteria
+        if user_description:
+            criteria_text = f"用戶描述：{user_description}"
+            if criteria_parts:
+                criteria_text += f"\n其他條件：{'、'.join(criteria_parts)}"
+        else:
+            criteria_text = "、".join(criteria_parts) if criteria_parts else "無特定條件"
 
         prompt = f"""你是一個專業的用戶推薦系統。我需要你根據以下條件，從候選用戶中選出最匹配的 {top_k} 個用戶，並按照匹配度從高到低排序。
 
@@ -225,10 +247,14 @@ class UserRecommendationSystem:
 {users_text}
 
 請仔細分析每個用戶與搜索條件的匹配程度，考慮以下因素：
-1. 完全匹配的條件（如地區、性別）
-2. 部分匹配的條件（如興趣的重疊度）
-3. 年齡的接近程度
-4. 職業的相關性
+1. **性別（Gender）**：如果用戶描述中提到性別要求（如 "female", "male", "woman", "man"），這是最重要的過濾條件，必須嚴格匹配
+2. **地區（Location）**：完全匹配的條件
+3. **興趣（Hobbies）**：部分匹配的條件，興趣的重疊度
+4. **年齡（Age）**：年齡的接近程度
+5. **職業（Occupation）**：職業的相關性
+6. **其他描述**：用戶自由描述中的其他偏好
+
+**重要**：如果用戶描述中明確要求特定性別（如 "looking for female"），請只返回該性別的用戶。性別要求是硬性條件。
 
 請按照以下格式輸出推薦結果（只輸出 ID，用逗號分隔，不要有其他說明）：
 ID1, ID2, ID3, ID4, ID5
