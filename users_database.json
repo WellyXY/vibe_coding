@@ -11,7 +11,20 @@
       "Dancing"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_001.jpg"
+    "image": "avatars/avatar_001.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "brown",
+      "hairstyle": "wavy",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "cute",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 2,
@@ -25,7 +38,19 @@
       "Music"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_002.jpg"
+    "image": "avatars/avatar_002.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "blonde",
+      "hairstyle": "curly",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "stylish",
+        "candid"
+      ]
+    }
   },
   {
     "id": 3,
@@ -40,7 +65,20 @@
       "Golf"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_003.jpg"
+    "image": "avatars/avatar_003.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "mature",
+        "artistic",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 4,
@@ -55,7 +93,20 @@
       "Swimming"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_004.jpg"
+    "image": "avatars/avatar_004.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "gray",
+      "hairstyle": "spiky",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "mature",
+        "rugged",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 5,
@@ -69,7 +120,20 @@
       "Camping"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_005.jpg"
+    "image": "avatars/avatar_005.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "black",
+      "hairstyle": "bun",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "mature",
+        "elegant",
+        "candid"
+      ]
+    }
   },
   {
     "id": 6,
@@ -82,7 +146,20 @@
       "Singing"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_006.jpg"
+    "image": "avatars/avatar_006.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "brown",
+      "hairstyle": "straight",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "cute",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 7,
@@ -95,7 +172,20 @@
       "Travel"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_007.jpg"
+    "image": "avatars/avatar_007.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "very long",
+      "hair_color": "blonde",
+      "hairstyle": "wavy",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "mature",
+        "stylish",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 8,
@@ -109,7 +199,19 @@
       "Swimming"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_008.jpg"
+    "image": "avatars/avatar_008.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "artistic",
+        "candid"
+      ]
+    }
   },
   {
     "id": 9,
@@ -124,7 +226,20 @@
       "Singing"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_009.jpg"
+    "image": "avatars/avatar_009.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "gray",
+      "hairstyle": "braided",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "mature",
+        "sophisticated",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 10,
@@ -139,7 +254,20 @@
       "Wine Tasting"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_010.jpg"
+    "image": "avatars/avatar_010.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "black",
+      "hairstyle": "straight",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "mature",
+        "casual",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 11,
@@ -153,7 +281,20 @@
       "Basketball"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_011.jpg"
+    "image": "avatars/avatar_011.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "very long",
+      "hair_color": "brown",
+      "hairstyle": "bun",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "cute",
+        "candid"
+      ]
+    }
   },
   {
     "id": 12,
@@ -167,7 +308,19 @@
       "Coffee"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_012.jpg"
+    "image": "avatars/avatar_012.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "blonde",
+      "hairstyle": "slicked back",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "sporty",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 13,
@@ -181,7 +334,20 @@
       "Cooking"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_013.jpg"
+    "image": "avatars/avatar_013.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "mature",
+        "artistic",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 14,
@@ -194,7 +360,20 @@
       "Gaming"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_014.jpg"
+    "image": "avatars/avatar_014.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "gray",
+      "hairstyle": "spiky",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "mature",
+        "rugged",
+        "candid"
+      ]
+    }
   },
   {
     "id": 15,
@@ -208,7 +387,20 @@
       "Gaming"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_015.jpg"
+    "image": "avatars/avatar_015.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "black",
+      "hairstyle": "straight",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "mature",
+        "casual",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 16,
@@ -221,7 +413,20 @@
       "Crafts"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_016.jpg"
+    "image": "avatars/avatar_016.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "brown",
+      "hairstyle": "messy",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "professional",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 17,
@@ -235,7 +440,20 @@
       "Singing"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_017.jpg"
+    "image": "avatars/avatar_017.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "blonde",
+      "hairstyle": "slicked back",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "mature",
+        "sporty",
+        "candid"
+      ]
+    }
   },
   {
     "id": 18,
@@ -249,7 +467,20 @@
       "Travel"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_018.jpg"
+    "image": "avatars/avatar_018.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "mature",
+        "artistic",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 19,
@@ -262,7 +493,19 @@
       "Reading"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_019.jpg"
+    "image": "avatars/avatar_019.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "gray",
+      "hairstyle": "spiky",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "rugged",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 20,
@@ -275,7 +518,20 @@
       "Movies"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_020.jpg"
+    "image": "avatars/avatar_020.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "black",
+      "hairstyle": "curly",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "mature",
+        "elegant",
+        "candid"
+      ]
+    }
   },
   {
     "id": 21,
@@ -289,7 +545,20 @@
       "Gaming"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_021.jpg"
+    "image": "avatars/avatar_021.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "brown",
+      "hairstyle": "braided",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "cute",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 22,
@@ -303,7 +572,20 @@
       "Gardening"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_022.jpg"
+    "image": "avatars/avatar_022.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "blonde",
+      "hairstyle": "ponytail",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "youthful",
+        "stylish",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 23,
@@ -318,7 +600,20 @@
       "Tennis"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_023.jpg"
+    "image": "avatars/avatar_023.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "mature",
+        "artistic",
+        "candid"
+      ]
+    }
   },
   {
     "id": 24,
@@ -332,7 +627,19 @@
       "Photography"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_024.jpg"
+    "image": "avatars/avatar_024.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "gray",
+      "hairstyle": "spiky",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "rugged",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 25,
@@ -346,7 +653,20 @@
       "Swimming"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_025.jpg"
+    "image": "avatars/avatar_025.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "black",
+      "hairstyle": "wavy",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "mature",
+        "elegant",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 26,
@@ -361,7 +681,19 @@
       "Music"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_026.jpg"
+    "image": "avatars/avatar_026.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "brown",
+      "hairstyle": "curly",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "cute",
+        "candid"
+      ]
+    }
   },
   {
     "id": 27,
@@ -376,7 +708,20 @@
       "Painting"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_027.jpg"
+    "image": "avatars/avatar_027.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "blonde",
+      "hairstyle": "braided",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "mature",
+        "stylish",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 28,
@@ -391,7 +736,20 @@
       "Writing"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_028.jpg"
+    "image": "avatars/avatar_028.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "youthful",
+        "artistic",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 29,
@@ -404,7 +762,20 @@
       "Writing"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_029.jpg"
+    "image": "avatars/avatar_029.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "gray",
+      "hairstyle": "bun",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "mature",
+        "sophisticated",
+        "candid"
+      ]
+    }
   },
   {
     "id": 30,
@@ -417,7 +788,20 @@
       "Golf"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_030.jpg"
+    "image": "avatars/avatar_030.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "black",
+      "hairstyle": "straight",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "mature",
+        "elegant",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 31,
@@ -431,7 +815,20 @@
       "Movies"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_031.jpg"
+    "image": "avatars/avatar_031.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "brown",
+      "hairstyle": "messy",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "professional",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 32,
@@ -445,7 +842,20 @@
       "Basketball"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_032.jpg"
+    "image": "avatars/avatar_032.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "blonde",
+      "hairstyle": "slicked back",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "mature",
+        "sporty",
+        "candid"
+      ]
+    }
   },
   {
     "id": 33,
@@ -458,7 +868,19 @@
       "Swimming"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_033.jpg"
+    "image": "avatars/avatar_033.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "artistic",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 34,
@@ -472,7 +894,20 @@
       "Photography"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_034.jpg"
+    "image": "avatars/avatar_034.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "gray",
+      "hairstyle": "spiky",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "youthful",
+        "rugged",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 35,
@@ -486,7 +921,20 @@
       "Meditation"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_035.jpg"
+    "image": "avatars/avatar_035.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "black",
+      "hairstyle": "straight",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "mature",
+        "casual",
+        "candid"
+      ]
+    }
   },
   {
     "id": 36,
@@ -501,7 +949,20 @@
       "Wine Tasting"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_036.jpg"
+    "image": "avatars/avatar_036.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "brown",
+      "hairstyle": "messy",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "professional",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 37,
@@ -514,7 +975,20 @@
       "Travel"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_037.jpg"
+    "image": "avatars/avatar_037.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "blonde",
+      "hairstyle": "slicked back",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "mature",
+        "sporty",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 38,
@@ -528,7 +1002,20 @@
       "Writing"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_038.jpg"
+    "image": "avatars/avatar_038.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "mature",
+        "artistic",
+        "candid"
+      ]
+    }
   },
   {
     "id": 39,
@@ -542,7 +1029,19 @@
       "Sports"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_039.jpg"
+    "image": "avatars/avatar_039.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "gray",
+      "hairstyle": "braided",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "sophisticated",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 40,
@@ -556,7 +1055,20 @@
       "Dancing"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_040.jpg"
+    "image": "avatars/avatar_040.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "black",
+      "hairstyle": "ponytail",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "mature",
+        "elegant",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 41,
@@ -570,7 +1082,20 @@
       "Gaming"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_041.jpg"
+    "image": "avatars/avatar_041.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "brown",
+      "hairstyle": "bun",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "cute",
+        "candid"
+      ]
+    }
   },
   {
     "id": 42,
@@ -583,7 +1108,20 @@
       "Programming"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_042.jpg"
+    "image": "avatars/avatar_042.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "blonde",
+      "hairstyle": "slicked back",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "youthful",
+        "sporty",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 43,
@@ -598,7 +1136,19 @@
       "Pets"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_043.jpg"
+    "image": "avatars/avatar_043.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "artistic",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 44,
@@ -611,7 +1161,20 @@
       "Cycling"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_044.jpg"
+    "image": "avatars/avatar_044.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "gray",
+      "hairstyle": "spiky",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "youthful",
+        "rugged",
+        "candid"
+      ]
+    }
   },
   {
     "id": 45,
@@ -624,7 +1187,20 @@
       "Coffee"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_045.jpg"
+    "image": "avatars/avatar_045.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "black",
+      "hairstyle": "straight",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "mature",
+        "casual",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 46,
@@ -637,7 +1213,20 @@
       "Swimming"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_046.jpg"
+    "image": "avatars/avatar_046.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "brown",
+      "hairstyle": "messy",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "professional",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 47,
@@ -650,7 +1239,20 @@
       "Tennis"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_047.jpg"
+    "image": "avatars/avatar_047.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "blonde",
+      "hairstyle": "slicked back",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "mature",
+        "sporty",
+        "candid"
+      ]
+    }
   },
   {
     "id": 48,
@@ -664,7 +1266,20 @@
       "Gaming"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_048.jpg"
+    "image": "avatars/avatar_048.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "mature",
+        "artistic",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 49,
@@ -677,7 +1292,20 @@
       "Golf"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_049.jpg"
+    "image": "avatars/avatar_049.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "gray",
+      "hairstyle": "spiky",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "mature",
+        "rugged",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 50,
@@ -690,7 +1318,20 @@
       "Golf"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_050.jpg"
+    "image": "avatars/avatar_050.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "black",
+      "hairstyle": "straight",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "mature",
+        "casual",
+        "candid"
+      ]
+    }
   },
   {
     "id": 51,
@@ -704,7 +1345,20 @@
       "Cycling"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_051.jpg"
+    "image": "avatars/avatar_051.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "brown",
+      "hairstyle": "messy",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "professional",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 52,
@@ -717,7 +1371,20 @@
       "Golf"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_052.jpg"
+    "image": "avatars/avatar_052.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "blonde",
+      "hairstyle": "slicked back",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "youthful",
+        "sporty",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 53,
@@ -732,7 +1399,19 @@
       "Music"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_053.jpg"
+    "image": "avatars/avatar_053.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "artistic",
+        "candid"
+      ]
+    }
   },
   {
     "id": 54,
@@ -745,7 +1424,20 @@
       "Travel"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_054.jpg"
+    "image": "avatars/avatar_054.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "gray",
+      "hairstyle": "straight",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "mature",
+        "sophisticated",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 55,
@@ -758,7 +1450,20 @@
       "Hiking"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_055.jpg"
+    "image": "avatars/avatar_055.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "black",
+      "hairstyle": "straight",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "youthful",
+        "casual",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 56,
@@ -772,7 +1477,20 @@
       "Meditation"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_056.jpg"
+    "image": "avatars/avatar_056.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "brown",
+      "hairstyle": "messy",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "professional",
+        "candid"
+      ]
+    }
   },
   {
     "id": 57,
@@ -785,7 +1503,20 @@
       "Reading"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_057.jpg"
+    "image": "avatars/avatar_057.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "blonde",
+      "hairstyle": "braided",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "mature",
+        "stylish",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 58,
@@ -799,7 +1530,20 @@
       "Cycling"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_058.jpg"
+    "image": "avatars/avatar_058.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "mature",
+        "artistic",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 59,
@@ -813,7 +1557,20 @@
       "Camping"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_059.jpg"
+    "image": "avatars/avatar_059.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "gray",
+      "hairstyle": "spiky",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "mature",
+        "rugged",
+        "candid"
+      ]
+    }
   },
   {
     "id": 60,
@@ -828,7 +1585,19 @@
       "Programming"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_060.jpg"
+    "image": "avatars/avatar_060.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "black",
+      "hairstyle": "straight",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "elegant",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 61,
@@ -842,7 +1611,20 @@
       "Sports"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_061.jpg"
+    "image": "avatars/avatar_061.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "brown",
+      "hairstyle": "messy",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "professional",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 62,
@@ -856,7 +1638,19 @@
       "Swimming"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_062.jpg"
+    "image": "avatars/avatar_062.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "blonde",
+      "hairstyle": "slicked back",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "sporty",
+        "candid"
+      ]
+    }
   },
   {
     "id": 63,
@@ -869,7 +1663,20 @@
       "Singing"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_063.jpg"
+    "image": "avatars/avatar_063.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "red",
+      "hairstyle": "braided",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "mature",
+        "natural",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 64,
@@ -882,7 +1689,20 @@
       "Swimming"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_064.jpg"
+    "image": "avatars/avatar_064.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "gray",
+      "hairstyle": "spiky",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "mature",
+        "rugged",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 65,
@@ -896,7 +1716,20 @@
       "Gardening"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_065.jpg"
+    "image": "avatars/avatar_065.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "black",
+      "hairstyle": "bun",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "mature",
+        "elegant",
+        "candid"
+      ]
+    }
   },
   {
     "id": 66,
@@ -911,7 +1744,20 @@
       "Meditation"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_066.jpg"
+    "image": "avatars/avatar_066.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "short",
+      "hair_color": "brown",
+      "hairstyle": "messy",
+      "eye_color": "blue",
+      "tags": [
+        "realistic",
+        "mature",
+        "professional",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 67,
@@ -924,7 +1770,20 @@
       "Yoga"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_067.jpg"
+    "image": "avatars/avatar_067.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "medium",
+      "hair_color": "blonde",
+      "hairstyle": "slicked back",
+      "eye_color": "green",
+      "tags": [
+        "realistic",
+        "mature",
+        "sporty",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 68,
@@ -939,7 +1798,19 @@
       "Travel"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_068.jpg"
+    "image": "avatars/avatar_068.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "buzz cut",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "hazel",
+      "tags": [
+        "realistic",
+        "artistic",
+        "candid"
+      ]
+    }
   },
   {
     "id": 69,
@@ -954,7 +1825,20 @@
       "Gaming"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_069.jpg"
+    "image": "avatars/avatar_069.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "gray",
+      "hairstyle": "braided",
+      "eye_color": "gray",
+      "tags": [
+        "realistic",
+        "youthful",
+        "sophisticated",
+        "photogenic"
+      ]
+    }
   },
   {
     "id": 70,
@@ -968,7 +1852,20 @@
       "Hiking"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_070.jpg"
+    "image": "avatars/avatar_070.jpg",
+    "appearance": {
+      "style": "realistic",
+      "hair_length": "long",
+      "hair_color": "black",
+      "hairstyle": "ponytail",
+      "eye_color": "brown",
+      "tags": [
+        "realistic",
+        "mature",
+        "elegant",
+        "authentic"
+      ]
+    }
   },
   {
     "id": 71,
@@ -983,7 +1880,20 @@
       "Photography"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_071.png"
+    "image": "avatars/avatar_071.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "very long",
+      "hair_color": "silver",
+      "hairstyle": "bun",
+      "eye_color": "blue",
+      "tags": [
+        "anime",
+        "mature",
+        "cute",
+        "kawaii"
+      ]
+    }
   },
   {
     "id": 72,
@@ -997,7 +1907,19 @@
       "Movies"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_072.png"
+    "image": "avatars/avatar_072.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "short",
+      "hair_color": "black",
+      "hairstyle": "slicked back",
+      "eye_color": "green",
+      "tags": [
+        "anime",
+        "sporty",
+        "colorful"
+      ]
+    }
   },
   {
     "id": 73,
@@ -1010,7 +1932,20 @@
       "Fitness"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_073.png"
+    "image": "avatars/avatar_073.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "medium",
+      "hair_color": "brown",
+      "hairstyle": "textured",
+      "eye_color": "red",
+      "tags": [
+        "anime",
+        "mature",
+        "artistic",
+        "fantasy"
+      ]
+    }
   },
   {
     "id": 74,
@@ -1025,7 +1960,19 @@
       "Cycling"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_074.png"
+    "image": "avatars/avatar_074.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "buzz cut",
+      "hair_color": "blonde",
+      "hairstyle": "spiky",
+      "eye_color": "purple",
+      "tags": [
+        "anime",
+        "rugged",
+        "vibrant"
+      ]
+    }
   },
   {
     "id": 75,
@@ -1039,7 +1986,19 @@
       "Meditation"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_075.png"
+    "image": "avatars/avatar_075.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "long",
+      "hair_color": "pink",
+      "hairstyle": "braided",
+      "eye_color": "amber",
+      "tags": [
+        "anime",
+        "elegant",
+        "kawaii"
+      ]
+    }
   },
   {
     "id": 76,
@@ -1054,7 +2013,20 @@
       "Tennis"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_076.png"
+    "image": "avatars/avatar_076.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "medium",
+      "hair_color": "blue",
+      "hairstyle": "messy",
+      "eye_color": "gray",
+      "tags": [
+        "anime",
+        "mature",
+        "professional",
+        "colorful"
+      ]
+    }
   },
   {
     "id": 77,
@@ -1067,7 +2039,19 @@
       "Basketball"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_077.png"
+    "image": "avatars/avatar_077.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "medium",
+      "hair_color": "purple",
+      "hairstyle": "bun",
+      "eye_color": "brown",
+      "tags": [
+        "anime",
+        "stylish",
+        "fantasy"
+      ]
+    }
   },
   {
     "id": 78,
@@ -1081,7 +2065,20 @@
       "Pets"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_078.png"
+    "image": "avatars/avatar_078.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "short",
+      "hair_color": "red",
+      "hairstyle": "textured",
+      "eye_color": "blue",
+      "tags": [
+        "anime",
+        "mature",
+        "artistic",
+        "vibrant"
+      ]
+    }
   },
   {
     "id": 79,
@@ -1096,7 +2093,20 @@
       "Yoga"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_079.png"
+    "image": "avatars/avatar_079.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "medium",
+      "hair_color": "white",
+      "hairstyle": "spiky",
+      "eye_color": "green",
+      "tags": [
+        "anime",
+        "mature",
+        "rugged",
+        "kawaii"
+      ]
+    }
   },
   {
     "id": 80,
@@ -1110,7 +2120,20 @@
       "Yoga"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_080.png"
+    "image": "avatars/avatar_080.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "short",
+      "hair_color": "silver",
+      "hairstyle": "curly",
+      "eye_color": "red",
+      "tags": [
+        "anime",
+        "mature",
+        "elegant",
+        "colorful"
+      ]
+    }
   },
   {
     "id": 81,
@@ -1123,7 +2146,20 @@
       "Singing"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_081.png"
+    "image": "avatars/avatar_081.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "short",
+      "hair_color": "black",
+      "hairstyle": "messy",
+      "eye_color": "purple",
+      "tags": [
+        "anime",
+        "mature",
+        "professional",
+        "fantasy"
+      ]
+    }
   },
   {
     "id": 82,
@@ -1138,7 +2174,20 @@
       "Cycling"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_082.png"
+    "image": "avatars/avatar_082.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "medium",
+      "hair_color": "brown",
+      "hairstyle": "slicked back",
+      "eye_color": "amber",
+      "tags": [
+        "anime",
+        "mature",
+        "sporty",
+        "vibrant"
+      ]
+    }
   },
   {
     "id": 83,
@@ -1153,7 +2202,20 @@
       "Hiking"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_083.png"
+    "image": "avatars/avatar_083.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "buzz cut",
+      "hair_color": "blonde",
+      "hairstyle": "textured",
+      "eye_color": "gray",
+      "tags": [
+        "anime",
+        "mature",
+        "artistic",
+        "kawaii"
+      ]
+    }
   },
   {
     "id": 84,
@@ -1168,7 +2230,20 @@
       "Fitness"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_084.png"
+    "image": "avatars/avatar_084.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "long",
+      "hair_color": "pink",
+      "hairstyle": "straight",
+      "eye_color": "brown",
+      "tags": [
+        "anime",
+        "mature",
+        "sophisticated",
+        "colorful"
+      ]
+    }
   },
   {
     "id": 85,
@@ -1182,7 +2257,20 @@
       "Yoga"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_085.png"
+    "image": "avatars/avatar_085.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "medium",
+      "hair_color": "blue",
+      "hairstyle": "straight",
+      "eye_color": "blue",
+      "tags": [
+        "anime",
+        "mature",
+        "casual",
+        "fantasy"
+      ]
+    }
   },
   {
     "id": 86,
@@ -1195,7 +2283,19 @@
       "Swimming"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_086.png"
+    "image": "avatars/avatar_086.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "long",
+      "hair_color": "purple",
+      "hairstyle": "curly",
+      "eye_color": "green",
+      "tags": [
+        "anime",
+        "cute",
+        "vibrant"
+      ]
+    }
   },
   {
     "id": 87,
@@ -1208,7 +2308,19 @@
       "Programming"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_087.png"
+    "image": "avatars/avatar_087.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "short",
+      "hair_color": "red",
+      "hairstyle": "slicked back",
+      "eye_color": "red",
+      "tags": [
+        "anime",
+        "sporty",
+        "kawaii"
+      ]
+    }
   },
   {
     "id": 88,
@@ -1222,7 +2334,19 @@
       "Running"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_088.png"
+    "image": "avatars/avatar_088.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "medium",
+      "hair_color": "white",
+      "hairstyle": "textured",
+      "eye_color": "purple",
+      "tags": [
+        "anime",
+        "artistic",
+        "colorful"
+      ]
+    }
   },
   {
     "id": 89,
@@ -1235,7 +2359,20 @@
       "Sports"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_089.png"
+    "image": "avatars/avatar_089.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "medium",
+      "hair_color": "silver",
+      "hairstyle": "bun",
+      "eye_color": "amber",
+      "tags": [
+        "anime",
+        "mature",
+        "sophisticated",
+        "fantasy"
+      ]
+    }
   },
   {
     "id": 90,
@@ -1250,7 +2387,19 @@
       "Swimming"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_090.png"
+    "image": "avatars/avatar_090.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "long",
+      "hair_color": "black",
+      "hairstyle": "straight",
+      "eye_color": "gray",
+      "tags": [
+        "anime",
+        "elegant",
+        "vibrant"
+      ]
+    }
   },
   {
     "id": 91,
@@ -1263,7 +2412,20 @@
       "Golf"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_091.png"
+    "image": "avatars/avatar_091.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "medium",
+      "hair_color": "brown",
+      "hairstyle": "messy",
+      "eye_color": "brown",
+      "tags": [
+        "anime",
+        "mature",
+        "professional",
+        "kawaii"
+      ]
+    }
   },
   {
     "id": 92,
@@ -1278,7 +2440,20 @@
       "Travel"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_092.png"
+    "image": "avatars/avatar_092.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "buzz cut",
+      "hair_color": "blonde",
+      "hairstyle": "slicked back",
+      "eye_color": "blue",
+      "tags": [
+        "anime",
+        "youthful",
+        "sporty",
+        "colorful"
+      ]
+    }
   },
   {
     "id": 93,
@@ -1292,7 +2467,20 @@
       "Cooking"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_093.png"
+    "image": "avatars/avatar_093.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "long",
+      "hair_color": "pink",
+      "hairstyle": "braided",
+      "eye_color": "green",
+      "tags": [
+        "anime",
+        "mature",
+        "natural",
+        "fantasy"
+      ]
+    }
   },
   {
     "id": 94,
@@ -1306,7 +2494,20 @@
       "Meditation"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_094.png"
+    "image": "avatars/avatar_094.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "medium",
+      "hair_color": "blue",
+      "hairstyle": "spiky",
+      "eye_color": "red",
+      "tags": [
+        "anime",
+        "mature",
+        "rugged",
+        "vibrant"
+      ]
+    }
   },
   {
     "id": 95,
@@ -1319,7 +2520,20 @@
       "Crafts"
     ],
     "gender": "Non-binary",
-    "image": "avatars/avatar_095.png"
+    "image": "avatars/avatar_095.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "buzz cut",
+      "hair_color": "purple",
+      "hairstyle": "straight",
+      "eye_color": "purple",
+      "tags": [
+        "anime",
+        "mature",
+        "casual",
+        "kawaii"
+      ]
+    }
   },
   {
     "id": 96,
@@ -1333,7 +2547,20 @@
       "Movies"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_096.png"
+    "image": "avatars/avatar_096.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "long",
+      "hair_color": "red",
+      "hairstyle": "straight",
+      "eye_color": "amber",
+      "tags": [
+        "anime",
+        "mature",
+        "cute",
+        "colorful"
+      ]
+    }
   },
   {
     "id": 97,
@@ -1348,7 +2575,19 @@
       "Programming"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_097.png"
+    "image": "avatars/avatar_097.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "medium",
+      "hair_color": "white",
+      "hairstyle": "slicked back",
+      "eye_color": "gray",
+      "tags": [
+        "anime",
+        "sporty",
+        "fantasy"
+      ]
+    }
   },
   {
     "id": 98,
@@ -1362,7 +2601,20 @@
       "Pets"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_098.png"
+    "image": "avatars/avatar_098.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "buzz cut",
+      "hair_color": "silver",
+      "hairstyle": "textured",
+      "eye_color": "brown",
+      "tags": [
+        "anime",
+        "mature",
+        "artistic",
+        "vibrant"
+      ]
+    }
   },
   {
     "id": 99,
@@ -1377,7 +2629,19 @@
       "Hiking"
     ],
     "gender": "Female",
-    "image": "avatars/avatar_099.png"
+    "image": "avatars/avatar_099.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "long",
+      "hair_color": "black",
+      "hairstyle": "braided",
+      "eye_color": "blue",
+      "tags": [
+        "anime",
+        "sophisticated",
+        "kawaii"
+      ]
+    }
   },
   {
     "id": 100,
@@ -1390,6 +2654,19 @@
       "Photography"
     ],
     "gender": "Male",
-    "image": "avatars/avatar_100.png"
+    "image": "avatars/avatar_100.png",
+    "appearance": {
+      "style": "anime",
+      "hair_length": "medium",
+      "hair_color": "brown",
+      "hairstyle": "straight",
+      "eye_color": "green",
+      "tags": [
+        "anime",
+        "mature",
+        "casual",
+        "colorful"
+      ]
+    }
   }
 ]

@@ -199,10 +199,20 @@ class UserRecommendationSystem:
     ) -> str:
         """構建 Gemini 排序提示詞"""
 
-        # 構建用戶信息字符串
+        # 構建用戶信息字符串（包含外觀特征）
         users_info = []
         for i, user in enumerate(users, 1):
-            user_str = f"{i}. ID:{user['id']}, {user['name']}, {user['age']}歲, {user['occupation']}, {user['location']}, 興趣:{', '.join(user['hobby'])}, {user['gender']}"
+            # 基本信息
+            user_str = f"{i}. ID:{user['id']}, {user['name']}, {user['age']}歲, {user['gender']}, {user['occupation']}, {user['location']}"
+
+            # 興趣
+            user_str += f", 興趣:{', '.join(user['hobby'])}"
+
+            # 外觀特征（如果存在）
+            if 'appearance' in user:
+                app = user['appearance']
+                user_str += f", 外觀:[{app['style']} style, {app['hair_length']} {app['hair_color']} hair, {app['eye_color']} eyes]"
+
             users_info.append(user_str)
 
         users_text = "\n".join(users_info)
@@ -248,13 +258,16 @@ class UserRecommendationSystem:
 
 請仔細分析每個用戶與搜索條件的匹配程度，考慮以下因素：
 1. **性別（Gender）**：如果用戶描述中提到性別要求（如 "female", "male", "woman", "man"），這是最重要的過濾條件，必須嚴格匹配
-2. **地區（Location）**：完全匹配的條件
-3. **興趣（Hobbies）**：部分匹配的條件，興趣的重疊度
-4. **年齡（Age）**：年齡的接近程度
-5. **職業（Occupation）**：職業的相關性
-6. **其他描述**：用戶自由描述中的其他偏好
+2. **外觀特征（Appearance）**：如果用戶描述中提到發色（blonde, brown, black等）、發長（long hair, short hair等）、風格（realistic, anime等），請優先匹配這些特征
+3. **地區（Location）**：完全匹配的條件
+4. **興趣（Hobbies）**：部分匹配的條件，興趣的重疊度
+5. **年齡（Age）**：年齡的接近程度
+6. **職業（Occupation）**：職業的相關性
+7. **其他描述**：用戶自由描述中的其他偏好
 
-**重要**：如果用戶描述中明確要求特定性別（如 "looking for female"），請只返回該性別的用戶。性別要求是硬性條件。
+**重要**：
+- 如果用戶描述中明確要求特定性別（如 "looking for female"），請只返回該性別的用戶。性別要求是硬性條件。
+- 如果用戶描述中提到外觀特征（如 "blonde hair", "long hair", "anime style"），請優先返回符合這些特征的用戶。
 
 請按照以下格式輸出推薦結果（只輸出 ID，用逗號分隔，不要有其他說明）：
 ID1, ID2, ID3, ID4, ID5
