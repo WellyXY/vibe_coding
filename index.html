@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="discover-app">
+        <div class="status-bar">
+            <div class="time">9:41</div>
+            <div class="dynamic-island" aria-hidden="true"></div>
+            <div class="status-icons" aria-label="Device status">
+                <img src="assets/cd73e98bda96a3604a8af5772e3d817c2fc52371.svg" alt="Cellular connection">
+                <img src="assets/ea0e782af555ce188429b1ba91c6ac8c2d1ca240.svg" alt="Wi-Fi signal">
+                <img src="assets/9b723dcc154d65cd93aceafcf3bd9e062d629b0f.svg" alt="Battery level">
+            </div>
+        </div>
+
+        <div class="feed-select">
+            <p>DISCOVER</p>
+        </div>
+
+        <div class="scene">
+            <div class="card-stack" id="cardStack"></div>
+        </div>
+
+        <div class="tab-bar" role="navigation" aria-label="Primary">
+            <button class="tab tab--discover tab--active" type="button" aria-label="Discover">
+                <span class="tab-icon">
+                    <img src="assets/26c43b91058d319063809de37fd05d7c9ee0a926.svg" alt="">
+                </span>
+            </button>
+            <button class="tab tab--chats" type="button" aria-label="Chats">
+                <span class="tab-icon">
+                    <img src="assets/faaee638c72e5e48cc9501426397a32c8dea78b8.svg" alt="">
+                </span>
+                <span class="tab-badge" aria-hidden="true"></span>
+            </button>
+            <button class="tab tab--home" type="button" aria-label="Home">
+                <span class="tab-icon">
+                    <img src="assets/080ec8782318c5f613a26d06866c1b9c29f73172.svg" alt="">
+                </span>
+            </button>
+            <button class="tab tab--feed" type="button" aria-label="Feed">
+                <span class="tab-icon">
+                    <img src="assets/4389afe28e538b73a91b2008d35fee9816338cbf.svg" alt="">
+                </span>
+            </button>
+            <button class="tab tab--profile" type="button" aria-label="Profile">
+                <span class="tab-icon">
+                    <img src="assets/7e47525fdaa872571d835dacfe7014552dcc5987.svg" alt="">
+                </span>
+            </button>
+        </div>
+
+        <div class="home-indicator">
+            <span></span>
+        </div>
+
+        <!-- Agent UI -->
+        <div class="agent-container">
+            <div class="agent-chat" id="agentChat"></div>
+            <img src="assets/Agnet/87e076fb06b8edb2_IMB_hdR0zT_transparent.gif" class="agent-avatar" alt="Agent"
+                onclick="toggleAgent()">
+        </div>
+    </div>
+
+    <template id="card-template">
+        <div class="swipe-card">
+            <div class="swipe-card__badges">
+                <div class="swipe-card__badge swipe-card__badge--nope">SKIP</div>
+                <div class="swipe-card__badge swipe-card__badge--like">LIKE</div>
+            </div>
+            <img class="swipe-card__photo" data-card-image alt="Profile photo">
+            <div class="swipe-card__overlay"></div>
+            <div class="swipe-card__top">
+                <button class="pill pill--ghost" type="button" data-card-pill>Profile</button>
+                <button class="pill pill--icon" type="button" aria-label="Favorite">
+                    <img src="assets/7e47525fdaa872571d835dacfe7014552dcc5987.svg" alt="">
+                </button>
+            </div>
+            <div class="swipe-card__body">
+                <h1 data-card-name>Starry</h1>
+                <p class="swipe-card__location" data-card-location>Taipei, Taiwan</p>
+                <div class="stat-band stat-band--hero">
+                    <div class="stat">
+                        <span class="stat-label">Likes</span>
+                        <span class="stat-value" data-card-likes>14.8k</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Posts</span>
+                        <span class="stat-value" data-card-posts>481</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Followers</span>
+                        <span class="stat-value" data-card-followers>120</span>
+                    </div>
+                </div>
+                <button class="message-pill message-pill--hero" type="button">
+                    <span class="message-pill__icon">
+                        <img src="assets/305bca51841752d611430710e44cdadc26616bc9.svg" alt="Call Starry">
+                    </span>
+                    <span class="message-pill__text">Send Message</span>
+                    <span class="message-pill__icon">
+                        <img src="assets/b0e6568b7095af7f782430e09f088aec38d1e071.svg" alt="Open keyboard">
+                    </span>
+                </button>
+            </div>
+        </div>
+    </template>
+
+    <script type="module" src="app.js"></script>
+    <script type="module">
+        import { API_ENDPOINTS } from './config.js';
+
+        // Make API_ENDPOINTS globally accessible
+        window.API_ENDPOINTS = API_ENDPOINTS;
+    </script>
+    <script>
+        // Agent UI Logic - Dynamic Question Generation
+        const agentChat = document.getElementById('agentChat');
+        let hasInteracted = false;
+        let answers = [];
+        let currentQuestionNum = 0;
+        const TOTAL_QUESTIONS = 3;
+
+        setTimeout(() => {
+            if (!hasInteracted) showNextQuestion();
+        }, 2000);
+
+        async function showNextQuestion() {
+            currentQuestionNum++;
+
+            if (currentQuestionNum === 1) {
+                // Fixed location question
+                showLocationQuestion();
+            } else if (currentQuestionNum <= TOTAL_QUESTIONS) {
+                // Generate dynamic question
+                await showDynamicQuestion();
+            } else {
+                // All questions answered, get recommendations
+                await getRecommendations();
+            }
+        }
+
+        async function showLocationQuestion() {
+            // Show loading state
+            agentChat.innerHTML = `<div class="chat-bubble">🌍 Loading locations...</div>`;
+
+            try {
+                // Fetch available locations from API
+                const response = await fetch(window.API_ENDPOINTS.options);
+                const data = await response.json();
+
+                if (data.locations && data.locations.length > 0) {
+                    // Randomly shuffle locations
+                    const shuffled = data.locations.sort(() => 0.5 - Math.random());
+
+                    // Get only 3 random locations
+                    const randomLocations = shuffled.slice(0, 3);
+
+                    // Generate option buttons
+                    let optionsHTML = '';
+                    randomLocations.forEach((location, index) => {
+                        const delay = (index + 1) * 0.1;
+                        const shortName = location.split(',')[0]; // Use short name
+                        optionsHTML += `<div class="chat-option" style="animation-delay: ${delay}s" onclick="handleAnswer('${location.replace(/'/g, "\\'")}')">${shortName}</div>`;
+                    });
+
+                    agentChat.innerHTML = `
+                        <div class="chat-bubble">Where do you want to meet someone?</div>
+                        <div class="chat-options">
+                            ${optionsHTML}
+                        </div>
+                    `;
+                } else {
+                    throw new Error('No locations available');
+                }
+            } catch (error) {
+                console.error('Error loading locations:', error);
+                // Fallback to default locations
+                agentChat.innerHTML = `
+                    <div class="chat-bubble">Where do you want to meet someone?</div>
+                    <div class="chat-options">
+                        <div class="chat-option" style="animation-delay: 0.1s" onclick="handleAnswer('New York')">New York</div>
+                        <div class="chat-option" style="animation-delay: 0.2s" onclick="handleAnswer('Chicago')">Chicago</div>
+                        <div class="chat-option" style="animation-delay: 0.3s" onclick="handleAnswer('Los Angeles')">Los Angeles</div>
+                    </div>
+                `;
+            }
+        }
+
+        async function showDynamicQuestion() {
+            // Show loading state
+            agentChat.innerHTML = `<div class="chat-bubble">🤔 Thinking...</div>`;
+
+            try {
+                const response = await fetch(window.API_ENDPOINTS.generateQuestion, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        previous_answers: answers,
+                        question_number: currentQuestionNum
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.question && data.options) {
+                    // Display the generated question
+                    let optionsHTML = '';
+                    data.options.forEach((option, index) => {
+                        const delay = (index + 1) * 0.1;
+                        optionsHTML += `<div class="chat-option" style="animation-delay: ${delay}s" onclick="handleAnswer('${option.replace(/'/g, "\\'")}')">${option}</div>`;
+                    });
+
+                    agentChat.innerHTML = `
+                        <div class="chat-bubble">${data.question}</div>
+                        <div class="chat-options">
+                            ${optionsHTML}
+                        </div>
+                    `;
+                } else {
+                    throw new Error('Invalid question format');
+                }
+            } catch (error) {
+                console.error('Error generating question:', error);
+                // Fallback to a default question
+                agentChat.innerHTML = `
+                    <div class="chat-bubble">What's your ideal weekend?</div>
+                    <div class="chat-options">
+                        <div class="chat-option" style="animation-delay: 0.1s" onclick="handleAnswer('Adventure outdoors')">Adventure outdoors</div>
+                        <div class="chat-option" style="animation-delay: 0.2s" onclick="handleAnswer('Cozy at home')">Cozy at home</div>
+                        <div class="chat-option" style="animation-delay: 0.3s" onclick="handleAnswer('Social activities')">Social activities</div>
+                    </div>
+                `;
+            }
+        }
+
+        function handleAnswer(answer) {
+            hasInteracted = true;
+            answers.push(answer);
+
+            // Show selection briefly
+            agentChat.innerHTML = `<div class="chat-bubble" style="background: #667eea; color: white;">${answer} ✓</div>`;
+
+            // Clear and move to next question
+            setTimeout(() => {
+                agentChat.innerHTML = '';
+                setTimeout(showNextQuestion, 300);
+            }, 800);
+        }
+
+        async function getRecommendations() {
+            agentChat.innerHTML = `<div class="chat-bubble">🤖 Finding your perfect matches with AI...</div>`;
+
+            // Build description from answers
+            const description = `User preferences: ${answers.join(', ')}`;
+
+            try {
+                const response = await fetch(window.API_ENDPOINTS.recommend, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        criteria: {
+                            location: answers[0], // First answer is always location
+                            description: description
+                        },
+                        top_k: 50
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.success && data.recommendations && data.recommendations.length > 0) {
+                    agentChat.innerHTML = `<div class="chat-bubble">✨ Found ${data.count} amazing matches!</div>`;
+
+                    // Update card stack
+                    if (window.updateStackWithRecommendations) {
+                        window.updateStackWithRecommendations(data.recommendations);
+                    }
+
+                    // Wait 3 seconds then reset
+                    setTimeout(() => {
+                        agentChat.innerHTML = '';
+                        hasInteracted = false;
+                        answers = [];
+                        currentQuestionNum = 0;
+                    }, 3000);
+                } else {
+                    agentChat.innerHTML = `<div class="chat-bubble">Hmm, let me try again...</div>`;
+                    setTimeout(() => {
+                        agentChat.innerHTML = '';
+                        hasInteracted = false;
+                        answers = [];
+                        currentQuestionNum = 0;
+                        showNextQuestion();
+                    }, 3000);
+                }
+            } catch (error) {
+                console.error('API Error:', error);
+                agentChat.innerHTML = `<div class="chat-bubble">⚠️ Oops! Let's try again.</div>`;
+                setTimeout(() => {
+                    agentChat.innerHTML = '';
+                    hasInteracted = false;
+                    answers = [];
+                    currentQuestionNum = 0;
+                    showNextQuestion();
+                }, 3000);
+            }
+        }
+
+        function toggleAgent() {
+            if (agentChat.children.length === 0) {
+                showNextQuestion();
+            } else {
+                agentChat.innerHTML = '';
+                hasInteracted = false;
+                answers = [];
+                currentQuestionNum = 0;
+            }
+        }
+    </script>
+</body>
+
+</html>

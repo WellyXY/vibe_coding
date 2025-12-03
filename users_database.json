@@ -1,0 +1,1395 @@
+[
+  {
+    "id": 1,
+    "name": "Alexander Young",
+    "age": 40,
+    "occupation": "Architect",
+    "location": "Miami",
+    "hobby": [
+      "Music",
+      "Singing",
+      "Dancing"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_001.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Henry White",
+    "age": 25,
+    "occupation": "Software Engineer",
+    "location": "Indianapolis",
+    "hobby": [
+      "Gaming",
+      "Cooking",
+      "Music"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_002.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Isabella Hernandez",
+    "age": 60,
+    "occupation": "Architect",
+    "location": "San Antonio",
+    "hobby": [
+      "Music",
+      "Tennis",
+      "Camping",
+      "Golf"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_003.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Olivia Anderson",
+    "age": 38,
+    "occupation": "Project Manager",
+    "location": "Charlotte",
+    "hobby": [
+      "Singing",
+      "Fitness",
+      "Basketball",
+      "Swimming"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_004.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Mason King",
+    "age": 46,
+    "occupation": "UX Designer",
+    "location": "New York",
+    "hobby": [
+      "Movies",
+      "Gaming",
+      "Camping"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_005.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Ava Smith",
+    "age": 64,
+    "occupation": "Accountant",
+    "location": "New York",
+    "hobby": [
+      "Reading",
+      "Singing"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_006.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Noah Young",
+    "age": 45,
+    "occupation": "Financial Analyst",
+    "location": "Jacksonville",
+    "hobby": [
+      "Running",
+      "Travel"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_007.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Grace Robinson",
+    "age": 30,
+    "occupation": "DevOps Engineer",
+    "location": "Jacksonville",
+    "hobby": [
+      "Tennis",
+      "Music",
+      "Swimming"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_008.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Daniel Miller",
+    "age": 50,
+    "occupation": "Chef",
+    "location": "Denver",
+    "hobby": [
+      "Basketball",
+      "Cooking",
+      "Cycling",
+      "Singing"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_009.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Carter Walker",
+    "age": 46,
+    "occupation": "Teacher",
+    "location": "San Antonio",
+    "hobby": [
+      "Painting",
+      "Fitness",
+      "Reading",
+      "Wine Tasting"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_010.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Mason Harris",
+    "age": 46,
+    "occupation": "Financial Analyst",
+    "location": "Los Angeles",
+    "hobby": [
+      "Tennis",
+      "Meditation",
+      "Basketball"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_011.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Samuel Smith",
+    "age": 29,
+    "occupation": "Social Media Manager",
+    "location": "San Francisco",
+    "hobby": [
+      "Photography",
+      "Swimming",
+      "Coffee"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_012.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Madison Anderson",
+    "age": 62,
+    "occupation": "Doctor",
+    "location": "San Antonio",
+    "hobby": [
+      "Writing",
+      "Coffee",
+      "Cooking"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_013.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Avery Moore",
+    "age": 60,
+    "occupation": "Project Manager",
+    "location": "New York",
+    "hobby": [
+      "Camping",
+      "Gaming"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_014.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Olivia Robinson",
+    "age": 53,
+    "occupation": "Architect",
+    "location": "Charlotte",
+    "hobby": [
+      "Painting",
+      "Singing",
+      "Gaming"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_015.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Dylan Walker",
+    "age": 54,
+    "occupation": "UI Designer",
+    "location": "Charlotte",
+    "hobby": [
+      "Movies",
+      "Crafts"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_016.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Emily Garcia",
+    "age": 52,
+    "occupation": "UI Designer",
+    "location": "New York",
+    "hobby": [
+      "Dancing",
+      "Tennis",
+      "Singing"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_017.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Mason Anderson",
+    "age": 62,
+    "occupation": "Artist",
+    "location": "Indianapolis",
+    "hobby": [
+      "Gaming",
+      "Photography",
+      "Travel"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_018.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Matthew Allen",
+    "age": 27,
+    "occupation": "Social Media Manager",
+    "location": "San Francisco",
+    "hobby": [
+      "Sports",
+      "Reading"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_019.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Madison Hernandez",
+    "age": 36,
+    "occupation": "Project Manager",
+    "location": "San Antonio",
+    "hobby": [
+      "Meditation",
+      "Movies"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_020.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Jackson Moore",
+    "age": 54,
+    "occupation": "Entrepreneur",
+    "location": "Charlotte",
+    "hobby": [
+      "Cooking",
+      "Wine Tasting",
+      "Gaming"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_021.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Riley Martinez",
+    "age": 21,
+    "occupation": "Business Analyst",
+    "location": "Chicago",
+    "hobby": [
+      "Camping",
+      "Running",
+      "Gardening"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_022.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Alexander Allen",
+    "age": 52,
+    "occupation": "HR Manager",
+    "location": "Fort Worth",
+    "hobby": [
+      "Camping",
+      "Pets",
+      "Hiking",
+      "Tennis"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_023.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Isaac Clark",
+    "age": 34,
+    "occupation": "Student",
+    "location": "Fort Worth",
+    "hobby": [
+      "Gardening",
+      "Crafts",
+      "Photography"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_024.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Owen Jones",
+    "age": 57,
+    "occupation": "Product Manager",
+    "location": "Los Angeles",
+    "hobby": [
+      "Pets",
+      "Gardening",
+      "Swimming"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_025.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Hannah King",
+    "age": 28,
+    "occupation": "Photographer",
+    "location": "Nashville",
+    "hobby": [
+      "Programming",
+      "Reading",
+      "Running",
+      "Music"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_026.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Victoria Robinson",
+    "age": 55,
+    "occupation": "Social Media Manager",
+    "location": "San Antonio",
+    "hobby": [
+      "Fitness",
+      "Yoga",
+      "Gardening",
+      "Painting"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_027.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Dylan Martin",
+    "age": 20,
+    "occupation": "Content Creator",
+    "location": "Chicago",
+    "hobby": [
+      "Pets",
+      "Gardening",
+      "Photography",
+      "Writing"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_028.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Lucas Martinez",
+    "age": 65,
+    "occupation": "Entrepreneur",
+    "location": "Los Angeles",
+    "hobby": [
+      "Reading",
+      "Writing"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_029.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Andrew Thomas",
+    "age": 49,
+    "occupation": "Social Media Manager",
+    "location": "Miami",
+    "hobby": [
+      "Sports",
+      "Golf"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_030.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Bella Lee",
+    "age": 58,
+    "occupation": "Nurse",
+    "location": "New York",
+    "hobby": [
+      "Yoga",
+      "Swimming",
+      "Movies"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_031.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Grace Anderson",
+    "age": 36,
+    "occupation": "Writer",
+    "location": "Detroit",
+    "hobby": [
+      "Programming",
+      "Writing",
+      "Basketball"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_032.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Isabella Rodriguez",
+    "age": 35,
+    "occupation": "Teacher",
+    "location": "Denver",
+    "hobby": [
+      "Cycling",
+      "Swimming"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_033.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Samuel Davis",
+    "age": 21,
+    "occupation": "Social Media Manager",
+    "location": "Chicago",
+    "hobby": [
+      "Cycling",
+      "Wine Tasting",
+      "Photography"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_034.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Jackson Martinez",
+    "age": 54,
+    "occupation": "Product Manager",
+    "location": "Indianapolis",
+    "hobby": [
+      "Writing",
+      "Programming",
+      "Meditation"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_035.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Brooklyn Clark",
+    "age": 55,
+    "occupation": "Graphic Designer",
+    "location": "Nashville",
+    "hobby": [
+      "Fitness",
+      "Photography",
+      "Dancing",
+      "Wine Tasting"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_036.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Riley Thomas",
+    "age": 52,
+    "occupation": "Chef",
+    "location": "Jacksonville",
+    "hobby": [
+      "Running",
+      "Travel"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_037.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Dylan Jones",
+    "age": 54,
+    "occupation": "Architect",
+    "location": "Charlotte",
+    "hobby": [
+      "Coffee",
+      "Golf",
+      "Writing"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_038.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Bella Hernandez",
+    "age": 27,
+    "occupation": "Social Media Manager",
+    "location": "Denver",
+    "hobby": [
+      "Camping",
+      "Hiking",
+      "Sports"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_039.jpg"
+  },
+  {
+    "id": 40,
+    "name": "Sofia Rodriguez",
+    "age": 43,
+    "occupation": "Nurse",
+    "location": "Boston",
+    "hobby": [
+      "Running",
+      "Movies",
+      "Dancing"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_040.jpg"
+  },
+  {
+    "id": 41,
+    "name": "Harper Martinez",
+    "age": 56,
+    "occupation": "Entrepreneur",
+    "location": "Austin",
+    "hobby": [
+      "Programming",
+      "Crafts",
+      "Gaming"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_041.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Zoey Wilson",
+    "age": 23,
+    "occupation": "Content Creator",
+    "location": "Denver",
+    "hobby": [
+      "Camping",
+      "Programming"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_042.jpg"
+  },
+  {
+    "id": 43,
+    "name": "Ava Martinez",
+    "age": 26,
+    "occupation": "Photographer",
+    "location": "San Francisco",
+    "hobby": [
+      "Photography",
+      "Crafts",
+      "Running",
+      "Pets"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_043.jpg"
+  },
+  {
+    "id": 44,
+    "name": "Isaac Robinson",
+    "age": 22,
+    "occupation": "UX Designer",
+    "location": "Portland",
+    "hobby": [
+      "Gaming",
+      "Cycling"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_044.jpg"
+  },
+  {
+    "id": 45,
+    "name": "Mason Lee",
+    "age": 56,
+    "occupation": "Researcher",
+    "location": "San Diego",
+    "hobby": [
+      "Cycling",
+      "Coffee"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_045.jpg"
+  },
+  {
+    "id": 46,
+    "name": "Henry Smith",
+    "age": 53,
+    "occupation": "Artist",
+    "location": "Boston",
+    "hobby": [
+      "Wine Tasting",
+      "Swimming"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_046.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Chloe Martin",
+    "age": 37,
+    "occupation": "Architect",
+    "location": "Philadelphia",
+    "hobby": [
+      "Music",
+      "Tennis"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_047.jpg"
+  },
+  {
+    "id": 48,
+    "name": "Camila Lewis",
+    "age": 64,
+    "occupation": "Sales Manager",
+    "location": "San Diego",
+    "hobby": [
+      "Photography",
+      "Singing",
+      "Gaming"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_048.jpg"
+  },
+  {
+    "id": 49,
+    "name": "Noah Lewis",
+    "age": 48,
+    "occupation": "Accountant",
+    "location": "Seattle",
+    "hobby": [
+      "Fitness",
+      "Golf"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_049.jpg"
+  },
+  {
+    "id": 50,
+    "name": "Mia Thompson",
+    "age": 36,
+    "occupation": "Photographer",
+    "location": "Charlotte",
+    "hobby": [
+      "Gardening",
+      "Golf"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_050.jpg"
+  },
+  {
+    "id": 51,
+    "name": "Alexander Smith",
+    "age": 45,
+    "occupation": "Data Scientist",
+    "location": "Philadelphia",
+    "hobby": [
+      "Coffee",
+      "Yoga",
+      "Cycling"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_051.jpg"
+  },
+  {
+    "id": 52,
+    "name": "Zoey Young",
+    "age": 21,
+    "occupation": "Teacher",
+    "location": "Houston",
+    "hobby": [
+      "Travel",
+      "Golf"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_052.jpg"
+  },
+  {
+    "id": 53,
+    "name": "William Wilson",
+    "age": 34,
+    "occupation": "Content Creator",
+    "location": "Fort Worth",
+    "hobby": [
+      "Singing",
+      "Gardening",
+      "Coffee",
+      "Music"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_053.jpg"
+  },
+  {
+    "id": 54,
+    "name": "Henry Allen",
+    "age": 36,
+    "occupation": "Writer",
+    "location": "Boston",
+    "hobby": [
+      "Hiking",
+      "Travel"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_054.jpg"
+  },
+  {
+    "id": 55,
+    "name": "Emily Martin",
+    "age": 24,
+    "occupation": "Marketing Manager",
+    "location": "San Antonio",
+    "hobby": [
+      "Pets",
+      "Hiking"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_055.jpg"
+  },
+  {
+    "id": 56,
+    "name": "Olivia Allen",
+    "age": 54,
+    "occupation": "Entrepreneur",
+    "location": "San Jose",
+    "hobby": [
+      "Music",
+      "Crafts",
+      "Meditation"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_056.jpg"
+  },
+  {
+    "id": 57,
+    "name": "Anthony Johnson",
+    "age": 65,
+    "occupation": "Architect",
+    "location": "San Jose",
+    "hobby": [
+      "Fitness",
+      "Reading"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_057.jpg"
+  },
+  {
+    "id": 58,
+    "name": "Riley Wilson",
+    "age": 36,
+    "occupation": "HR Manager",
+    "location": "Chicago",
+    "hobby": [
+      "Coffee",
+      "Movies",
+      "Cycling"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_058.jpg"
+  },
+  {
+    "id": 59,
+    "name": "Aria Lee",
+    "age": 45,
+    "occupation": "Business Analyst",
+    "location": "Dallas",
+    "hobby": [
+      "Surfing",
+      "Hiking",
+      "Camping"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_059.jpg"
+  },
+  {
+    "id": 60,
+    "name": "Gabriel Rodriguez",
+    "age": 26,
+    "occupation": "UX Designer",
+    "location": "San Francisco",
+    "hobby": [
+      "Photography",
+      "Painting",
+      "Reading",
+      "Programming"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_060.jpg"
+  },
+  {
+    "id": 61,
+    "name": "Ava Davis",
+    "age": 61,
+    "occupation": "Sales Manager",
+    "location": "Columbus",
+    "hobby": [
+      "Camping",
+      "Reading",
+      "Sports"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_061.jpg"
+  },
+  {
+    "id": 62,
+    "name": "Riley Robinson",
+    "age": 25,
+    "occupation": "Social Media Manager",
+    "location": "Austin",
+    "hobby": [
+      "Basketball",
+      "Reading",
+      "Swimming"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_062.jpg"
+  },
+  {
+    "id": 63,
+    "name": "Lily Young",
+    "age": 37,
+    "occupation": "Nurse",
+    "location": "Seattle",
+    "hobby": [
+      "Writing",
+      "Singing"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_063.jpg"
+  },
+  {
+    "id": 64,
+    "name": "Audrey Wilson",
+    "age": 65,
+    "occupation": "Business Analyst",
+    "location": "Miami",
+    "hobby": [
+      "Painting",
+      "Swimming"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_064.jpg"
+  },
+  {
+    "id": 65,
+    "name": "Lucas Thompson",
+    "age": 41,
+    "occupation": "DevOps Engineer",
+    "location": "Seattle",
+    "hobby": [
+      "Yoga",
+      "Dancing",
+      "Gardening"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_065.jpg"
+  },
+  {
+    "id": 66,
+    "name": "Jayden King",
+    "age": 62,
+    "occupation": "Project Manager",
+    "location": "Las Vegas",
+    "hobby": [
+      "Yoga",
+      "Programming",
+      "Travel",
+      "Meditation"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_066.jpg"
+  },
+  {
+    "id": 67,
+    "name": "Abigail Rodriguez",
+    "age": 64,
+    "occupation": "Financial Analyst",
+    "location": "San Francisco",
+    "hobby": [
+      "Painting",
+      "Yoga"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_067.jpg"
+  },
+  {
+    "id": 68,
+    "name": "Michael Wilson",
+    "age": 27,
+    "occupation": "Artist",
+    "location": "Columbus",
+    "hobby": [
+      "Golf",
+      "Gaming",
+      "Surfing",
+      "Travel"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_068.jpg"
+  },
+  {
+    "id": 69,
+    "name": "Mateo Miller",
+    "age": 24,
+    "occupation": "Social Media Manager",
+    "location": "San Diego",
+    "hobby": [
+      "Surfing",
+      "Painting",
+      "Meditation",
+      "Gaming"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_069.jpg"
+  },
+  {
+    "id": 70,
+    "name": "Claire Walker",
+    "age": 63,
+    "occupation": "Content Creator",
+    "location": "San Antonio",
+    "hobby": [
+      "Gaming",
+      "Tennis",
+      "Hiking"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_070.jpg"
+  },
+  {
+    "id": 71,
+    "name": "Ethan Taylor",
+    "age": 58,
+    "occupation": "Social Media Manager",
+    "location": "Austin",
+    "hobby": [
+      "Sports",
+      "Dancing",
+      "Coffee",
+      "Photography"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_071.png"
+  },
+  {
+    "id": 72,
+    "name": "Noah Jackson",
+    "age": 31,
+    "occupation": "HR Manager",
+    "location": "Chicago",
+    "hobby": [
+      "Tennis",
+      "Reading",
+      "Movies"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_072.png"
+  },
+  {
+    "id": 73,
+    "name": "Chloe Jones",
+    "age": 51,
+    "occupation": "Nurse",
+    "location": "Detroit",
+    "hobby": [
+      "Cooking",
+      "Fitness"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_073.png"
+  },
+  {
+    "id": 74,
+    "name": "Carter Johnson",
+    "age": 32,
+    "occupation": "Doctor",
+    "location": "Dallas",
+    "hobby": [
+      "Pets",
+      "Dancing",
+      "Yoga",
+      "Cycling"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_074.png"
+  },
+  {
+    "id": 75,
+    "name": "David Martinez",
+    "age": 32,
+    "occupation": "Accountant",
+    "location": "Seattle",
+    "hobby": [
+      "Yoga",
+      "Running",
+      "Meditation"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_075.png"
+  },
+  {
+    "id": 76,
+    "name": "Liam Jones",
+    "age": 48,
+    "occupation": "Student",
+    "location": "Charlotte",
+    "hobby": [
+      "Painting",
+      "Camping",
+      "Meditation",
+      "Tennis"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_076.png"
+  },
+  {
+    "id": 77,
+    "name": "Joshua Brown",
+    "age": 34,
+    "occupation": "Project Manager",
+    "location": "Boston",
+    "hobby": [
+      "Painting",
+      "Basketball"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_077.png"
+  },
+  {
+    "id": 78,
+    "name": "Zoey Anderson",
+    "age": 48,
+    "occupation": "UI Designer",
+    "location": "Charlotte",
+    "hobby": [
+      "Programming",
+      "Music",
+      "Pets"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_078.png"
+  },
+  {
+    "id": 79,
+    "name": "Ella Harris",
+    "age": 54,
+    "occupation": "DevOps Engineer",
+    "location": "Houston",
+    "hobby": [
+      "Fitness",
+      "Pets",
+      "Writing",
+      "Yoga"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_079.png"
+  },
+  {
+    "id": 80,
+    "name": "William Lopez",
+    "age": 52,
+    "occupation": "Business Analyst",
+    "location": "Chicago",
+    "hobby": [
+      "Singing",
+      "Painting",
+      "Yoga"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_080.png"
+  },
+  {
+    "id": 81,
+    "name": "Emma Clark",
+    "age": 58,
+    "occupation": "Software Engineer",
+    "location": "Philadelphia",
+    "hobby": [
+      "Gardening",
+      "Singing"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_081.png"
+  },
+  {
+    "id": 82,
+    "name": "Layla Rodriguez",
+    "age": 54,
+    "occupation": "Lawyer",
+    "location": "New York",
+    "hobby": [
+      "Crafts",
+      "Photography",
+      "Tennis",
+      "Cycling"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_082.png"
+  },
+  {
+    "id": 83,
+    "name": "Sophia Robinson",
+    "age": 63,
+    "occupation": "Photographer",
+    "location": "Philadelphia",
+    "hobby": [
+      "Swimming",
+      "Gaming",
+      "Sports",
+      "Hiking"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_083.png"
+  },
+  {
+    "id": 84,
+    "name": "Jayden Hernandez",
+    "age": 57,
+    "occupation": "Full Stack Developer",
+    "location": "Austin",
+    "hobby": [
+      "Running",
+      "Basketball",
+      "Surfing",
+      "Fitness"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_084.png"
+  },
+  {
+    "id": 85,
+    "name": "Noah Wilson",
+    "age": 43,
+    "occupation": "Lawyer",
+    "location": "Chicago",
+    "hobby": [
+      "Wine Tasting",
+      "Reading",
+      "Yoga"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_085.png"
+  },
+  {
+    "id": 86,
+    "name": "Samuel Miller",
+    "age": 30,
+    "occupation": "Researcher",
+    "location": "Dallas",
+    "hobby": [
+      "Coffee",
+      "Swimming"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_086.png"
+  },
+  {
+    "id": 87,
+    "name": "Riley Jones",
+    "age": 26,
+    "occupation": "HR Manager",
+    "location": "Charlotte",
+    "hobby": [
+      "Gardening",
+      "Programming"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_087.png"
+  },
+  {
+    "id": 88,
+    "name": "Penelope Miller",
+    "age": 32,
+    "occupation": "Data Scientist",
+    "location": "Fort Worth",
+    "hobby": [
+      "Cooking",
+      "Dancing",
+      "Running"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_088.png"
+  },
+  {
+    "id": 89,
+    "name": "Joshua Wilson",
+    "age": 62,
+    "occupation": "HR Manager",
+    "location": "Houston",
+    "hobby": [
+      "Reading",
+      "Sports"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_089.png"
+  },
+  {
+    "id": 90,
+    "name": "Olivia Johnson",
+    "age": 32,
+    "occupation": "UX Designer",
+    "location": "Nashville",
+    "hobby": [
+      "Tennis",
+      "Surfing",
+      "Photography",
+      "Swimming"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_090.png"
+  },
+  {
+    "id": 91,
+    "name": "Jayden Moore",
+    "age": 49,
+    "occupation": "UI Designer",
+    "location": "Las Vegas",
+    "hobby": [
+      "Photography",
+      "Golf"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_091.png"
+  },
+  {
+    "id": 92,
+    "name": "Ethan Lee",
+    "age": 24,
+    "occupation": "Data Scientist",
+    "location": "San Diego",
+    "hobby": [
+      "Gardening",
+      "Yoga",
+      "Camping",
+      "Travel"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_092.png"
+  },
+  {
+    "id": 93,
+    "name": "Jackson Jones",
+    "age": 40,
+    "occupation": "Marketing Manager",
+    "location": "Phoenix",
+    "hobby": [
+      "Golf",
+      "Movies",
+      "Cooking"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_093.png"
+  },
+  {
+    "id": 94,
+    "name": "Luke Rodriguez",
+    "age": 43,
+    "occupation": "HR Manager",
+    "location": "Denver",
+    "hobby": [
+      "Cycling",
+      "Music",
+      "Meditation"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_094.png"
+  },
+  {
+    "id": 95,
+    "name": "Mateo Taylor",
+    "age": 58,
+    "occupation": "Accountant",
+    "location": "Indianapolis",
+    "hobby": [
+      "Cooking",
+      "Crafts"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_095.png"
+  },
+  {
+    "id": 96,
+    "name": "Mateo Thomas",
+    "age": 63,
+    "occupation": "Architect",
+    "location": "Jacksonville",
+    "hobby": [
+      "Music",
+      "Gardening",
+      "Movies"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_096.png"
+  },
+  {
+    "id": 97,
+    "name": "Charlotte Brown",
+    "age": 29,
+    "occupation": "Social Media Manager",
+    "location": "Chicago",
+    "hobby": [
+      "Reading",
+      "Hiking",
+      "Crafts",
+      "Programming"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_097.png"
+  },
+  {
+    "id": 98,
+    "name": "Sofia Thomas",
+    "age": 42,
+    "occupation": "Photographer",
+    "location": "Boston",
+    "hobby": [
+      "Hiking",
+      "Movies",
+      "Pets"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_098.png"
+  },
+  {
+    "id": 99,
+    "name": "Ella Robinson",
+    "age": 25,
+    "occupation": "HR Manager",
+    "location": "Chicago",
+    "hobby": [
+      "Gardening",
+      "Tennis",
+      "Running",
+      "Hiking"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_099.png"
+  },
+  {
+    "id": 100,
+    "name": "Mason Smith",
+    "age": 52,
+    "occupation": "Student",
+    "location": "San Francisco",
+    "hobby": [
+      "Meditation",
+      "Photography"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_100.png"
+  }
+]

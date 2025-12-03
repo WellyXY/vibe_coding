@@ -1,0 +1,74 @@
+[
+  {
+    "id": 97,
+    "name": "俊傑 黃",
+    "age": 29,
+    "occupation": "Sales Manager",
+    "location": "Tokyo",
+    "hobby": [
+      "旅遊",
+      "Basketball",
+      "游泳",
+      "烹飪"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_097.jpg"
+  },
+  {
+    "id": 86,
+    "name": "David Smith",
+    "age": 51,
+    "occupation": "Content Creator",
+    "location": "Paris",
+    "hobby": [
+      "Meditation",
+      "Fitness",
+      "旅遊",
+      "品酒"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_086.jpg"
+  },
+  {
+    "id": 30,
+    "name": "William 陳",
+    "age": 45,
+    "occupation": "Product Manager",
+    "location": "Seattle",
+    "hobby": [
+      "Tennis",
+      "旅遊"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_030.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Victoria Davis",
+    "age": 34,
+    "occupation": "Accountant",
+    "location": "台北",
+    "hobby": [
+      "跑步",
+      "品酒",
+      "騎單車",
+      "旅遊"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_022.jpg"
+  },
+  {
+    "id": 48,
+    "name": "家豪 陳",
+    "age": 50,
+    "occupation": "Teacher",
+    "location": "Austin",
+    "hobby": [
+      "攝影",
+      "繪畫",
+      "烹飪"
+    ],
+    "gender": "Male",
+    "image": "avatars/avatar_048.jpg"
+  }
+]

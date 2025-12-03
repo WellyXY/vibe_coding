@@ -1,0 +1,32 @@
+[
+  {
+    "id": 49,
+    "name": "思穎 Davis",
+    "age": 33,
+    "occupation": "DevOps Engineer",
+    "location": "基隆",
+    "hobby": [
+      "露營",
+      "Basketball",
+      "Meditation",
+      "寫作"
+    ],
+    "gender": "Non-binary",
+    "image": "avatars/avatar_049.jpg"
+  },
+  {
+    "id": 69,
+    "name": "Michael 劉",
+    "age": 35,
+    "occupation": "Software Engineer",
+    "location": "Seoul",
+    "hobby": [
+      "Painting",
+      "攝影",
+      "閱讀",
+      "Gaming"
+    ],
+    "gender": "Female",
+    "image": "avatars/avatar_069.jpg"
+  }
+]

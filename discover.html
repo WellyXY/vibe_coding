@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover - Find Your Match</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            max-height: 800px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        .chat-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 30px;
+            background: #f8f9fa;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .agent-message {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .agent-avatar {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .agent-text {
+            background: white;
+            padding: 16px 20px;
+            border-radius: 18px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            font-size: 1.05rem;
+            line-height: 1.5;
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+            margin-left: 52px;
+        }
+
+        .option-button {
+            background: white;
+            border: 2px solid #e0e0e0;
+            padding: 14px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .option-button:hover {
+            border-color: #667eea;
+            background: #f0f2ff;
+            transform: translateX(5px);
+        }
+
+        .option-button.selected {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: #667eea;
+        }
+
+        .user-choice {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .user-choice-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 14px 20px;
+            border-radius: 18px;
+            max-width: 70%;
+            font-size: 1.05rem;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+            margin-left: 52px;
+        }
+
+        .user-card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid #f0f0f0;
+        }
+
+        .user-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            border-color: #667eea;
+        }
+
+        .rank-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+
+        .user-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: block;
+            object-fit: cover;
+            border: 3px solid #f0f0f0;
+        }
+
+        .user-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .user-detail {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .user-detail-icon {
+            font-size: 1rem;
+        }
+
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .hobby-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        .loading::after {
+            content: '...';
+            animation: dots 1.5s steps(4, end) infinite;
+        }
+
+        @keyframes dots {
+
+            0%,
+            20% {
+                content: '.';
+            }
+
+            40% {
+                content: '..';
+            }
+
+            60%,
+            100% {
+                content: '...';
+            }
+        }
+
+        .restart-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 20px auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .restart-button:hover {
+            transform: scale(1.05);
+        }
+
+        .skip-button {
+            background: transparent;
+            border: 2px solid #999;
+            color: #999;
+            padding: 12px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            margin-top: 10px;
+            margin-left: 52px;
+            transition: all 0.3s;
+        }
+
+        .skip-button:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 12px;
+            margin-top: 15px;
+            margin-left: 52px;
+        }
+
+        .continue-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+
+        .continue-button:hover {
+            transform: scale(1.05);
+        }
+
+        .show-results-button {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+            padding: 14px 30px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .show-results-button:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #667eea;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Discover</h1>
+            <p>Find your perfect match</p>
+        </div>
+        <div class="chat-container" id="chatContainer">
+            <!-- Messages will be added here -->
+        </div>
+    </div>
+
+    <script>
+        let criteria = {};
+        let currentStep = 0;
+        let options = null;
+
+        const allSteps = [
+            {
+                question: "Looking for someone in a specific location?",
+                key: "location",
+                type: "select",
+                optionsKey: "locations"
+            },
+            {
+                question: "What kind of hobbies should they have?",
+                key: "hobby",
+                type: "select",
+                optionsKey: "hobbies"
+            },
+            {
+                question: "Any specific occupation in mind?",
+                key: "occupation",
+                type: "select",
+                optionsKey: "occupations"
+            },
+            {
+                question: "What age range are you looking for?",
+                key: "age",
+                type: "age_range"
+            }
+        ];
+
+        let steps = [];
+
+        // 打亂陣列順序（Fisher-Yates shuffle）
+        function shuffleArray(array) {
+            const shuffled = [...array];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        // 初始化
+        async function init() {
+            // 每次初始化時打亂問題順序
+            steps = shuffleArray(allSteps);
+            console.log('🔀 Questions shuffled! First question will be:', steps[0].key);
+
+            // 載入選項
+            try {
+                const response = await fetch('http://localhost:5000/api/options');
+                options = await response.json();
+
+                // 開始對話
+                addAgentMessage("Hi! 👋 I'm here to help you find the perfect match.");
+                setTimeout(() => {
+                    askNextQuestion();
+                }, 1000);
+            } catch (error) {
+                addAgentMessage("Oops! Please make sure the server is running. Start it with: python3 app.py");
+            }
+        }
+
+        function addAgentMessage(text) {
+            const chatContainer = document.getElementById('chatContainer');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'message';
+            messageDiv.innerHTML = `
+                <div class="agent-message">
+                    <div class="agent-avatar">🤖</div>
+                    <div class="agent-text">${text}</div>
+                </div>
+            `;
+            chatContainer.appendChild(messageDiv);
+            scrollToBottom();
+        }
+
+        function addUserChoice(text) {
+            const chatContainer = document.getElementById('chatContainer');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'user-choice';
+            messageDiv.innerHTML = `<div class="user-choice-text">${text}</div>`;
+            chatContainer.appendChild(messageDiv);
+            scrollToBottom();
+        }
+
+        function askNextQuestion() {
+            if (currentStep >= steps.length) {
+                // 所有問題回答完畢，開始推薦
+                showRecommendations();
+                return;
+            }
+
+            const step = steps[currentStep];
+            addAgentMessage(step.question);
+
+            setTimeout(() => {
+                if (step.type === 'select') {
+                    showOptions(step);
+                } else if (step.type === 'age_range') {
+                    showAgeRangeOptions();
+                }
+                showSkipButton();
+            }, 500);
+        }
+
+        function showOptions(step) {
+            const chatContainer = document.getElementById('chatContainer');
+            const optionsDiv = document.createElement('div');
+            optionsDiv.className = 'options-container';
+
+            // 從所有選項中隨機抽取 3 個
+            const allOptions = options[step.optionsKey];
+            const shuffled = shuffleArray(allOptions);
+            const optionsList = shuffled.slice(0, 3); // 隨機抽取 3 個選項
+
+            optionsList.forEach(option => {
+                const button = document.createElement('button');
+                button.className = 'option-button';
+                button.textContent = option;
+                button.onclick = () => selectOption(step.key, option, button);
+                optionsDiv.appendChild(button);
+            });
+
+            chatContainer.appendChild(optionsDiv);
+            scrollToBottom();
+        }
+
+        function showAgeRangeOptions() {
+            const chatContainer = document.getElementById('chatContainer');
+            const optionsDiv = document.createElement('div');
+            optionsDiv.className = 'options-container';
+
+            const ageRanges = [
+                { label: "18-25", min: 18, max: 25 },
+                { label: "26-35", min: 26, max: 35 },
+                { label: "36-45", min: 36, max: 45 },
+                { label: "46-60", min: 46, max: 60 },
+                { label: "60+", min: 60, max: 100 }
+            ];
+
+            ageRanges.forEach(range => {
+                const button = document.createElement('button');
+                button.className = 'option-button';
+                button.textContent = range.label;
+                button.onclick = () => selectAgeRange(range.min, range.max, button);
+                optionsDiv.appendChild(button);
+            });
+
+            chatContainer.appendChild(optionsDiv);
+            scrollToBottom();
+        }
+
+        function showSkipButton() {
+            const chatContainer = document.getElementById('chatContainer');
+            const skipButton = document.createElement('button');
+            skipButton.className = 'skip-button';
+            skipButton.textContent = 'Skip this question';
+            skipButton.onclick = skipQuestion;
+            chatContainer.appendChild(skipButton);
+            scrollToBottom();
+        }
+
+        function selectOption(key, value, button) {
+            // 標記選中
+            button.classList.add('selected');
+
+            // 禁用所有選項
+            document.querySelectorAll('.option-button').forEach(btn => {
+                btn.disabled = true;
+                btn.style.cursor = 'not-allowed';
+            });
+
+            // 隱藏 skip 按鈕
+            const skipButtons = document.querySelectorAll('.skip-button');
+            skipButtons.forEach(btn => btn.remove());
+
+            // 添加用戶選擇
+            addUserChoice(value);
+
+            // 保存選擇
+            criteria[key] = value;
+
+            // 直接顯示推薦結果（不需要確認）
+            setTimeout(() => {
+                showRecommendations();
+            }, 500);
+        }
+
+        function selectAgeRange(min, max, button) {
+            button.classList.add('selected');
+
+            document.querySelectorAll('.option-button').forEach(btn => {
+                btn.disabled = true;
+                btn.style.cursor = 'not-allowed';
+            });
+
+            const skipButtons = document.querySelectorAll('.skip-button');
+            skipButtons.forEach(btn => btn.remove());
+
+            addUserChoice(`${min}-${max} years old`);
+
+            criteria.age_min = min;
+            criteria.age_max = max;
+
+            // 直接顯示推薦結果
+            setTimeout(() => {
+                showRecommendations();
+            }, 500);
+        }
+
+        function skipQuestion() {
+            const skipButtons = document.querySelectorAll('.skip-button');
+            skipButtons.forEach(btn => btn.remove());
+
+            document.querySelectorAll('.option-button').forEach(btn => {
+                btn.disabled = true;
+                btn.style.cursor = 'not-allowed';
+            });
+
+            addUserChoice("I'll skip this one");
+
+            // 直接顯示推薦結果
+            setTimeout(() => {
+                showRecommendations();
+            }, 500);
+        }
+
+        function showActionButtons() {
+            const chatContainer = document.getElementById('chatContainer');
+            const actionDiv = document.createElement('div');
+            actionDiv.className = 'action-buttons';
+
+            // Continue button
+            const continueBtn = document.createElement('button');
+            continueBtn.className = 'continue-button';
+            continueBtn.textContent = currentStep < steps.length ? 'Continue' : 'Finish';
+            continueBtn.onclick = () => {
+                actionDiv.remove();
+                currentStep++;
+                askNextQuestion();
+            };
+
+            // Show results button
+            const resultsBtn = document.createElement('button');
+            resultsBtn.className = 'show-results-button';
+            resultsBtn.textContent = 'Show Results Now';
+            resultsBtn.onclick = () => {
+                actionDiv.remove();
+                currentStep = steps.length; // Skip to end
+                showRecommendations();
+            };
+
+            actionDiv.appendChild(continueBtn);
+            actionDiv.appendChild(resultsBtn);
+            chatContainer.appendChild(actionDiv);
+            scrollToBottom();
+        }
+
+        async function showRecommendations() {
+            addAgentMessage("Great! Let me find the best matches for you...");
+
+            const chatContainer = document.getElementById('chatContainer');
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'loading';
+            loadingDiv.textContent = 'Searching';
+            loadingDiv.style.marginLeft = '52px';
+            chatContainer.appendChild(loadingDiv);
+            scrollToBottom();
+
+            try {
+                const response = await fetch('http://localhost:5000/api/recommend', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        criteria: criteria,
+                        top_k: 5
+                    })
+                });
+
+                const data = await response.json();
+                loadingDiv.remove();
+
+                if (data.success && data.recommendations.length > 0) {
+                    addAgentMessage(`Perfect! I found ${data.count} amazing matches for you:`);
+                    displayResults(data.recommendations);
+
+                    // 顯示結果後，繼續下一個問題
+                    setTimeout(() => {
+                        if (currentStep < steps.length) {
+                            askNextQuestion();
+                        } else {
+                            // 所有問題都回答了，顯示重新開始按鈕
+                            const restartButton = document.createElement('button');
+                            restartButton.className = 'restart-button';
+                            restartButton.textContent = '🔄 Start Over';
+                            restartButton.onclick = restart;
+                            chatContainer.appendChild(restartButton);
+                        }
+                    }, 1000);
+                } else {
+                    addAgentMessage("Hmm, I couldn't find exact matches. Let me try with more flexible criteria...");
+                }
+            } catch (error) {
+                loadingDiv.remove();
+                addAgentMessage("Oops! Something went wrong. Please try again.");
+                console.error(error);
+            }
+        }
+
+        function displayResults(recommendations) {
+            const chatContainer = document.getElementById('chatContainer');
+            const resultsDiv = document.createElement('div');
+            resultsDiv.className = 'results-grid';
+
+            recommendations.forEach((user, index) => {
+                const card = document.createElement('div');
+                card.className = 'user-card';
+                card.innerHTML = `
+                    <div class="rank-badge">#${index + 1}</div>
+                    <img src="${user.image}" alt="${user.name}" class="user-avatar" onerror="this.src='https://via.placeholder.com/100'">
+                    <div class="user-name">${user.name}</div>
+                    <div class="user-detail">
+                        <span class="user-detail-icon">🎂</span>
+                        <span>${user.age} years old</span>
+                    </div>
+                    <div class="user-detail">
+                        <span class="user-detail-icon">💼</span>
+                        <span>${user.occupation}</span>
+                    </div>
+                    <div class="user-detail">
+                        <span class="user-detail-icon">📍</span>
+                        <span>${user.location}</span>
+                    </div>
+                    <div class="user-detail">
+                        <span class="user-detail-icon">⚧</span>
+                        <span>${user.gender}</span>
+                    </div>
+                    <div class="hobbies">
+                        ${user.hobby.map(h => `<span class="hobby-tag">${h}</span>`).join('')}
+                    </div>
+                `;
+                resultsDiv.appendChild(card);
+            });
+
+            chatContainer.appendChild(resultsDiv);
+            scrollToBottom();
+        }
+
+        function restart() {
+            criteria = {};
+            currentStep = 0;
+            document.getElementById('chatContainer').innerHTML = '';
+            init();
+        }
+
+        function scrollToBottom() {
+            const chatContainer = document.getElementById('chatContainer');
+            setTimeout(() => {
+                chatContainer.scrollTop = chatContainer.scrollHeight;
+            }, 100);
+        }
+
+        // 啟動應用
+        init();
+    </script>
+</body>
+
+</html>
