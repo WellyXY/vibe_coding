@@ -551,3 +551,170 @@ img {
         transform: translateY(0);
     }
 }
+
+/* === Direct Input Feature === */
+
+/* Input Icon Button (Left of Agent) */
+.input-icon-btn {
+    position: absolute;
+    bottom: 5px;
+    right: 90px;
+    /* Left of agent avatar */
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    pointer-events: auto;
+    z-index: 101;
+}
+
+.input-icon-btn:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.input-icon-btn:active {
+    transform: scale(0.95);
+}
+
+.input-icon-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Direct Input Container */
+.direct-input-container {
+    position: fixed;
+    bottom: 160px;
+    right: 20px;
+    z-index: 200;
+    pointer-events: auto;
+    animation: fadeInUp 0.3s ease;
+}
+
+.direct-input-box {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 320px;
+    max-width: calc(100vw - 40px);
+}
+
+.direct-input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.direct-input-header span {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.direct-input-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.direct-input-close:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.direct-input-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 14px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    resize: vertical;
+    min-height: 100px;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.direct-input-box textarea:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.direct-input-box textarea::placeholder {
+    color: #999;
+}
+
+.direct-input-submit {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.direct-input-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.direct-input-submit:active {
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .direct-input-container {
+        right: 10px;
+        bottom: 140px;
+    }
+
+    .direct-input-box {
+        width: calc(100vw - 20px);
+        padding: 15px;
+    }
+
+    .input-icon-btn {
+        right: 80px;
+        width: 44px;
+        height: 44px;
+    }
+}
