@@ -82,7 +82,7 @@ img {
 }
 
 .feed-select {
-    position: absolute;
+    position: fixed;
     top: 62px;
     left: 0;
     width: 100%;
@@ -90,7 +90,10 @@ img {
     z-index: 40;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
+    background: var(--ivory);
+    padding-bottom: 12px;
 }
 
 /* Updated Header Tabs */
