@@ -88,18 +88,31 @@ img {
     width: 100%;
     padding: 12px 24px 0;
     z-index: 40;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.feed-select p {
-    font-size: 24px;
+/* Updated Header Tabs */
+.header-tab {
+    background: none;
+    border: none;
+    font-size: 20px;
     font-weight: 900;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+    color: rgba(13, 13, 13, 0.3);
+    font-family: 'Inter', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.header-tab--active {
     color: var(--text-dark);
-    transform: scaleX(1.15);
-    transform-origin: left;
-    font-family: 'Arial Black', sans-serif;
-    margin-left: 4px;
+    transform: scale(1.05);
 }
 
 .scene {
@@ -717,4 +730,145 @@ img {
         width: 44px;
         height: 44px;
     }
+}
+
+/* === Trending Feature === */
+
+/* Trending View Container */
+.trending-view {
+    position: absolute;
+    inset: 0;
+    padding-top: 110px; /* Match .scene padding */
+    z-index: 20;
+    background: var(--ivory);
+    overflow-y: auto; /* Allow scrolling */
+    padding-bottom: 100px; /* Space for bottom tab bar */
+}
+
+/* Hide scrollbar for cleaner look */
+.trending-view::-webkit-scrollbar {
+    display: none;
+}
+.trending-view {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Hero Section */
+.trending-hero {
+    position: relative;
+    margin: 0 20px 30px;
+    border-radius: 32px;
+    overflow: hidden;
+    height: 320px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.trending-hero-label {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    font-weight: 900;
+    color: black;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.trending-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trending-hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+}
+
+.trending-hero-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    letter-spacing: -0.02em;
+}
+
+.trending-hero-subtitle {
+    font-size: 13px;
+    opacity: 0.8;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Trending List */
+.trending-list-container {
+    padding: 0 24px;
+}
+
+.trending-list-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+
+.trending-item-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.trending-item-info {
+    flex: 1;
+}
+
+.trending-item-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+}
+
+.trending-item-handle {
+    font-size: 13px;
+    color: rgba(13, 13, 13, 0.5);
+}
+
+.trending-item-stats {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.trending-item-followers {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(13, 13, 13, 0.5);
+}
+
+.trending-item-action {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: var(--text-dark);
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    display: flex;
+    justify-content: center;
 }

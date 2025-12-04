@@ -24,11 +24,96 @@
         </div>
 
         <div class="feed-select">
-            <p>DISCOVER</p>
+            <button class="header-tab header-tab--active" onclick="switchView('discover')">DISCOVER</button>
+            <button class="header-tab" onclick="switchView('trending')">TRENDING</button>
         </div>
 
         <div class="scene">
             <div class="card-stack" id="cardStack"></div>
+        </div>
+
+        <!-- Trending View -->
+        <div class="trending-view" id="trendingView" style="display: none;">
+            <div class="trending-hero">
+                <div class="trending-hero-label">TRENDING</div>
+                <img src="avatars/avatar_001.jpg" alt="Featured" class="trending-hero-image">
+                <div class="trending-hero-overlay">
+                    <h1 class="trending-hero-title">Frank Ocean</h1>
+                    <p class="trending-hero-subtitle">1 973 256 listeners in this month</p>
+                </div>
+            </div>
+
+            <div class="trending-list-container">
+                <h2 class="trending-list-title">Trending Characters</h2>
+                <div class="trending-list">
+                    <div class="trending-item">
+                        <img src="avatars/avatar_002.jpg" alt="User" class="trending-item-avatar">
+                        <div class="trending-item-info">
+                            <div class="trending-item-name">Anya Forger</div>
+                            <div class="trending-item-handle">@AnyaPeanuts</div>
+                        </div>
+                        <div class="trending-item-stats">
+                            <span class="trending-item-followers">2.1M</span>
+                            <button class="trending-item-action">...</button>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="avatars/avatar_003.jpg" alt="User" class="trending-item-avatar">
+                        <div class="trending-item-info">
+                            <div class="trending-item-name">Spider-Man</div>
+                            <div class="trending-item-handle">@FriendlyNeighborhood</div>
+                        </div>
+                        <div class="trending-item-stats">
+                            <span class="trending-item-followers">15.4M</span>
+                            <button class="trending-item-action">...</button>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="avatars/avatar_004.jpg" alt="User" class="trending-item-avatar">
+                        <div class="trending-item-info">
+                            <div class="trending-item-name">Naruto Uzumaki</div>
+                            <div class="trending-item-handle">@Dattebayo_Official</div>
+                        </div>
+                        <div class="trending-item-stats">
+                            <span class="trending-item-followers">12.9M</span>
+                            <button class="trending-item-action">...</button>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="avatars/avatar_005.jpg" alt="User" class="trending-item-avatar">
+                        <div class="trending-item-info">
+                            <div class="trending-item-name">Goku</div>
+                            <div class="trending-item-handle">@SonGoku</div>
+                        </div>
+                        <div class="trending-item-stats">
+                            <span class="trending-item-followers">20.5M</span>
+                            <button class="trending-item-action">...</button>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="avatars/avatar_006.jpg" alt="User" class="trending-item-avatar">
+                        <div class="trending-item-info">
+                            <div class="trending-item-name">Mickey Mouse</div>
+                            <div class="trending-item-handle">@MickeyMouse</div>
+                        </div>
+                        <div class="trending-item-stats">
+                            <span class="trending-item-followers">9.8M</span>
+                            <button class="trending-item-action">...</button>
+                        </div>
+                    </div>
+                    <div class="trending-item">
+                        <img src="avatars/avatar_007.jpg" alt="User" class="trending-item-avatar">
+                        <div class="trending-item-info">
+                            <div class="trending-item-name">Wonder Woman</div>
+                            <div class="trending-item-handle">@DianaPrince</div>
+                        </div>
+                        <div class="trending-item-stats">
+                            <span class="trending-item-followers">11.2M</span>
+                            <button class="trending-item-action">...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="tab-bar" role="navigation" aria-label="Primary">
@@ -429,6 +514,34 @@
                 setTimeout(() => {
                     agentChat.innerHTML = '';
                 }, 3000);
+            }
+        }
+    </script>
+    <script>
+        window.switchView = function(viewName) {
+            const discoverView = document.querySelector('.scene');
+            const trendingView = document.getElementById('trendingView');
+            const tabs = document.querySelectorAll('.header-tab');
+            const agentContainer = document.querySelector('.agent-container');
+
+            if (viewName === 'discover') {
+                discoverView.style.display = 'block';
+                trendingView.style.display = 'none';
+                tabs[0].classList.add('header-tab--active');
+                tabs[1].classList.remove('header-tab--active');
+                // Show agent in discover view
+                if (agentContainer) {
+                    agentContainer.style.display = 'flex';
+                }
+            } else {
+                discoverView.style.display = 'none';
+                trendingView.style.display = 'block';
+                tabs[0].classList.remove('header-tab--active');
+                tabs[1].classList.add('header-tab--active');
+                // Hide agent in trending view
+                if (agentContainer) {
+                    agentContainer.style.display = 'none';
+                }
             }
         }
     </script>
