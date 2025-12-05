@@ -403,7 +403,7 @@ def recommend():
 
 if __name__ == '__main__':
     import os
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 8000))
     debug = os.environ.get('FLASK_ENV') == 'development'
 
     print("🚀 推薦系統 API 服務器啟動中...")

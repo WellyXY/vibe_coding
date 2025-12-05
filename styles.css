@@ -82,46 +82,43 @@ img {
 }
 
 .feed-select {
-    position: fixed;
-    top: 62px;
+    position: absolute;
+    top: 78px;
     left: 0;
     width: 100%;
-    padding: 12px 24px 0;
-    z-index: 40;
+    padding: 0 24px;
+    z-index: 60;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background: var(--ivory);
-    padding-bottom: 12px;
+    justify-content: flex-start;
+    gap: 24px;
 }
 
 /* Updated Header Tabs */
 .header-tab {
     background: none;
     border: none;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 900;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
     color: rgba(13, 13, 13, 0.3);
-    font-family: 'Inter', 'Arial', sans-serif;
+    font-family: 'Arial Black', sans-serif;
     margin: 0;
     padding: 0;
     cursor: pointer;
     transition: all 0.3s ease;
-    white-space: nowrap;
+    transform-origin: left;
 }
 
 .header-tab--active {
     color: var(--text-dark);
-    transform: scale(1.05);
 }
 
 .scene {
     position: absolute;
     inset: 0;
-    padding-top: 110px;
+    padding-top: 124px;
     z-index: 1;
 }
 
@@ -387,7 +384,7 @@ img {
 }
 
 .tab--chats {
-    background: #0d0d0d;
+    background: #ffffff;
     width: 42px;
     height: 42px;
 }
@@ -402,25 +399,29 @@ img {
     --stroke-0: #bcb7b0;
 }
 
+.tab--feed {
+    background: #ffffff;
+}
+
 .tab--feed .tab-icon img {
     --fill-0: #0d0d0d;
     --stroke-0: #0d0d0d;
+    opacity: 0.6;
+}
+
+.tab--profile {
+    background: #ffffff;
 }
 
 .tab--profile .tab-icon img {
-    --stroke-0: #ffffff;
+    --stroke-0: #0d0d0d;
     filter: none;
+    opacity: 0.6;
 }
 
 .tab--chats .tab-icon img {
-    filter: invert(1) brightness(2);
-    opacity: 0.95;
-}
-
-.tab--feed .tab-icon img {
-    --fill-0: #0d0d0d;
-    --stroke-0: #0d0d0d;
-    opacity: 0.7;
+    filter: none;
+    opacity: 0.6;
 }
 
 .tab-icon {
@@ -741,7 +742,7 @@ img {
 .trending-view {
     position: absolute;
     inset: 0;
-    padding-top: 110px; /* Match .scene padding */
+    padding-top: 124px; /* Match .scene padding */
     z-index: 20;
     background: var(--ivory);
     overflow-y: auto; /* Allow scrolling */

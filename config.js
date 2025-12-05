@@ -3,7 +3,7 @@
 
 const API_CONFIG = {
     // 開發環境：本地後端
-    development: 'http://localhost:5000',
+    development: 'http://localhost:8000',
 
     // 生產環境：Railway 後端
     production: 'https://vibe-coding-production-cdb4.up.railway.app'
